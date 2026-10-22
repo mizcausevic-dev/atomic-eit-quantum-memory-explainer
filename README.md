@@ -1,35 +1,15 @@
-# Atomic EIT Quantum Memory
+# Atomic EIT quantum memory
 
-34-second frame-locked schematic explainer. 1,020 frames at 30 fps. The figure is a labeled cutaway, not a measurement and not a certified reference.
+Frame-accurate sectional explainer of atomic electromagnetically induced transparency quantum memory. 34 seconds, 30 fps, frames 0–1019.
 
 Live plate: https://mizcausevic-dev.github.io/atomic-eit-quantum-memory-explainer/
 
-Repository: https://github.com/mizcausevic-dev/atomic-eit-quantum-memory-explainer
+The plate separates hardware (metal and glass) from three overlays: cyan for the signal pathway, gold for the control field, and violet for collective coherence. It shows the lambda system, spatial compression of the signal envelope at reduced group velocity, mapping onto a collective spin wave, and partial retrieval. It does not show a stopped glowing photon, a copied pulse, perfect efficiency, or indefinite storage.
 
-## What this is
+Open `index.html`. Space plays and pauses. The scrubber and the five section buttons jump the timeline. `index.html?frame=700` renders that frame. Add `&shot=1` for a 1920×1080 plate without the page chrome.
 
-An interactive anatomy plate for Atomic EIT Quantum Memory. Play, scrub, or jump the five stages. The same frame always draws the same picture.
+`node tests/invariants.js` checks the timeline: one excitation, no backward travel, slowed group velocity only inside the ensemble, a frozen spin wave while the control is off, and a weaker retrieved envelope that is stationary in the closing second.
 
-## What this is not
+This is an explanatory schematic, not a device specification or a setup guide. Boundaries are in `ACCURACY-Cursor.md` and on the page. The Medium draft is `article-Cursor.md`.
 
-- Explanatory schematic, not a certified engineering, medical, or product reference.
-- Cyan marks the primary pathway, gold marks energy or actuation, and violet marks sensing or state. These colors are overlays, not literal emission.
-- Scale changes, slow motion, and time compression are labeled on the figure.
-- This page does not add dimensions, efficiencies, certifications, vendor internals, or performance claims.
-- Verify the subject before any publication, purchase, safety, or clinical use.
-
-## Limits copied from the brief
-
-- No stationary glowing photon, copying, perfect efficiency, or indefinite storage. Group velocity is not vacuum light speed change.
-
-## Run
-
-Open `index.html`. GitHub Pages serves this repository from the `pages` branch.
-
-## Conflict note
-
-The explainer brief fixes the palette and the single technical plate. A seven-theme dashboard switcher is not applied here.
-
-## Provenance
-
-Prompt p53. Component names on the plate come from that brief's stage lines. No extra specifications were added.
+GitHub Pages serves the `pages` branch. `index.html` keeps that filename because Pages serves it. The article and the accuracy note use the `-Cursor` suffix.
