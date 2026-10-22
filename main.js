@@ -31,7 +31,7 @@
     if (slider && document.activeElement !== slider) slider.value = String(frame);
     var st = EIT.state(frame);
     if (readOut) {
-      readOut.textContent = st.section.clock + "  " + st.section.title + "  \u00b7  frame " + frame;
+      readOut.textContent = st.section.clock + "  " + st.section.title + "  ·  frame " + frame;
     }
     if (playBtn) playBtn.textContent = playing ? "Pause" : (frame >= 1019 ? "Replay" : "Play");
     if (transcript && st.section.id !== lastSection) {
